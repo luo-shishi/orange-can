@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/welcom/welcom",
+    "pages/post/post",
+    "pages/post/post-detail/post-detail",
+    "pages/post/post-comment/post-comment"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4A6141",
+    "navigationBarTitleText": "小桔子",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

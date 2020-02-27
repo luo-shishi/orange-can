@@ -1,0 +1,9 @@
+<!--pages/welcom/welcom.wxml-->
+
+<view class="container">
+  <image src="/images/test.jpg" class="avatar"></image>
+  <text class="motto">Hello,橘子罐头</text>
+  <view catchtap="onTapJump" class="journey-container">
+    <text class="journey">开启橘子罐头</text>
+  </view>
+</view>

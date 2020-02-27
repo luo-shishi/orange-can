@@ -1,0 +1,30 @@
+<!--pages/post/post-detail/post-detail.wxml-->
+<view>
+  <image mode="aspectFill" class="head-image" src="{{post.postImg}}"></image>
+  <mp-icon type="field" class="music" catchtap="onMusicTap" icon="{{isPlayingMusic?'music-off':'music'}}" color="black" size="{{30}}"></mp-icon>
+  <text class="title">{{post.title}}</text>
+  <view class="author-date">
+    <view class="author-box">
+      <image class="avatar" src="{{post.avatar}}"></image>
+      <text class="author">{{post.author}}</text>
+    </view>
+    <text class="date">{{post.dateTime}}</text>
+  </view>
+  <text class="detail">{{post.detail}}</text>
+</view>
+<view class="tool">
+<view class="tool-item" catchtap="onUpTap" data-post-id="{{post.postId}}">
+<mp-icon wx:if="{{post.upStatus}}" type="field" icon="like" color="red" size="{{20}}"></mp-icon>
+<mp-icon wx:else icon="like" color="black" size="{{20}}"></mp-icon>
+<text>{{post.upNum}}</text>
+</view>
+<view class="tool-item comment" catchtap="onCommentTap" data-post-id="{{post.postId}}">
+<mp-icon icon="comment" color="black" size="{{20}}"></mp-icon>
+<text>{{post.commentNum}}</text>
+</view>
+<view class="tool-item" catchtap="onCollectionTap" data-post-id="{{post.postId}}">
+<mp-icon wx:if="{{!post.collectionStatus}}" icon="star" color="black" size="{{20}}"></mp-icon>
+<mp-icon wx:else type="field" icon="star" color="darkorange" size="{{20}}"></mp-icon>
+<text>{{post.collectionNum}}</text>
+</view>
+</view>
