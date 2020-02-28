@@ -14,8 +14,8 @@
 </view>
 <view class="tool">
 <view class="tool-item" catchtap="onUpTap" data-post-id="{{post.postId}}">
-<mp-icon wx:if="{{post.upStatus}}" type="field" icon="like" color="red" size="{{20}}"></mp-icon>
-<mp-icon wx:else icon="like" color="black" size="{{20}}"></mp-icon>
+<mp-icon animation="{{animationUp}}" wx:if="{{post.upStatus}}" type="field" icon="like" color="red" size="{{20}}"></mp-icon>
+<mp-icon animation="{{animationUp}}" wx:else icon="like" color="black" size="{{20}}"></mp-icon>
 <text>{{post.upNum}}</text>
 </view>
 <view class="tool-item comment" catchtap="onCommentTap" data-post-id="{{post.postId}}">

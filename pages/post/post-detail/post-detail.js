@@ -25,6 +25,7 @@ Page({
      this.addReadingTimes();
      this.setMusicMonitor();
      this.initMusicStatus();
+     this.setAnimation();
   },
 
   /**
@@ -110,7 +111,17 @@ Page({
     this.setData({
       'post.upStatus': newData.upStatus,
       'post.upNum': newData.upNum
+    });
+    this.animationUp.scale(2).step();
+    this.setData({
+      animationUp:this.animationUp.export()
     })
+    setTimeout(function(){
+      this.animationUp.scale(1).step();
+      this.setData({
+        animationUp:this.animationUp.export()
+      })
+    }.bind(this),300)
   },
   onCommentTap:function(event){
     var id=event.currentTarget.dataset.postId;
@@ -181,5 +192,11 @@ Page({
         isPlayingMusic:false
       })
     }
+  },
+  setAnimation:function(){
+    var animationUp=wx.createAnimation({
+      timingFunction:'ease-in-out'
+    })
+    this.animationUp=animationUp
   }
 })
