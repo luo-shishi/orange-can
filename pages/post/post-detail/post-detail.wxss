@@ -68,8 +68,8 @@
   width: 110rpx;
   height: 110rpx;
   position: absolute;
-  left: 50%;
+  left: 95%;
   margin-left: -51rpx;
-  top: 180rpx;
+  top: 470rpx;
   opacity: 0.9;
 }
