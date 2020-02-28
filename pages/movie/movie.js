@@ -1,4 +1,4 @@
-// pages/welcom/welcom.js
+// pages/movie/movie.js
 Page({
 
   /**
@@ -33,14 +33,14 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-      console.log("hide")
+
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-      console.log("unload")
+
   },
 
   /**
@@ -62,19 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  onTapJump:function(event){
-    wx.switchTab({
-      url: '../post/post',
-      success:function(){
-        console.log("success")
-      },
-      fail:function(){
-        console.log("fail")
-      },
-      complete:function(){
-        console.log("complete")
-      }
-    });
   }
 })

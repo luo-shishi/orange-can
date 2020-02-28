@@ -3,13 +3,39 @@
     "pages/welcom/welcom",
     "pages/post/post",
     "pages/post/post-detail/post-detail",
-    "pages/post/post-comment/post-comment"
+    "pages/post/post-comment/post-comment",
+    "pages/movie/movie"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#4A6141",
+    "navigationBarBackgroundColor": "#f47920",
     "navigationBarTitleText": "小桔子",
     "navigationBarTextStyle": "white"
+  },
+  "tabBar":{
+    "color": "#000",
+    "selectedColor":"orange",
+    "backgroundColor": "#FFF",
+    "list":[
+      {
+        "pagePath":"pages/welcom/welcom",
+        "text":"首页",
+        "iconPath":"images/welcom.png",
+        "selectedIconPath":"images/welcom.png"
+      },
+      {
+        "pagePath": "pages/post/post",
+        "text": "文章",
+        "iconPath": "images/post-icon.png",
+        "selectedIconPath": "images/post-icon.png"
+      },
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "电影",
+        "iconPath": "images/movie.png",
+        "selectedIconPath": "images/movie.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

@@ -1,6 +1,6 @@
 /* pages/welcom/welcom.wxss */
 page{
-  background-color:#ECC0A8;
+  background-color:rgb(227, 241, 225);
 }
 .container{
   display: flex;
